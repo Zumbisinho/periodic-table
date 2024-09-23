@@ -16,3 +16,4 @@ Altere a várivel *Posições desejadas*
 ## Como eu uso a opção de compactar as imagems?
 No fim da execução do código existe uma opção para automaticamente efetuala
 ## Como eu altero o output?
+Mudando a váriavel "Output"
