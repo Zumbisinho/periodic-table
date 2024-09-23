@@ -92,6 +92,6 @@ if input == 'Y':
                 offset_do_y += imagem.height + y_offset  # Incrementar o offset vertical
                 imagem_anterior += 1
             desenho = ImageDraw.Draw(a4_imagem)
-            desenho.text((0,0),text=f'{folha + 1} - {folhas_totais}',fill=(10,0,0),font=font3)
+            desenho.text((0,0),text=f'{folha + 1} - {folhas_totais - 1}',fill=(10,0,0),font=font3)
             desenho.text((0,(a4_imagem.height - 80)),text=f'https://github.com/Zumbisinho/periodic-table',fill=(188, 255, 160),font=font3)
             a4_imagem.save(os.path.join(output,f'otimizado_{folha}.png'))
