@@ -25,6 +25,8 @@ if not os.path.exists(output):
 
 
 font = ImageFont.truetype("arial.ttf", 100)  
+font3 = ImageFont.truetype("arial.ttf", 60)  
+font4 = ImageFont.truetype("arial.ttf", 50)
 font2 = ImageFont.truetype("arial.ttf", 30)  
 
 
@@ -89,10 +91,7 @@ if input == 'Y':
                 )
                 offset_do_y += imagem.height + y_offset  # Incrementar o offset vertical
                 imagem_anterior += 1
+            desenho = ImageDraw.Draw(a4_imagem)
+            desenho.text((0,0),text=f'{folha + 1} - {folhas_totais}',fill=(10,0,0),font=font3)
+            desenho.text((0,(a4_imagem.height - 80)),text=f'https://github.com/Zumbisinho/periodic-table',fill=(188, 255, 160),font=font3)
             a4_imagem.save(os.path.join(output,f'otimizado_{folha}.png'))
-            print('lupando folha')
-
-
-    
-
-
